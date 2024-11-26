@@ -5,6 +5,7 @@ use App\Http\Controllers\StaffController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\FormBController;
 
 
 
@@ -61,6 +62,9 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('/users2', [UserController::class, 'index2'])->name('invite2');
     Route::get('/users/invite2', [UserController::class, 'invite_view2'])->name('invite_view2');
     Route::post('/users/invite2', [UserController::class, 'process2'])->name('process_invite2');
+
+    Route::get('/formb', [FormBController::class, 'index'])->name('formb.index');
+    Route::post('/submit-formb', [FormBController::class, 'submit'])->name('formb.submit');
 
 
 

@@ -58,6 +58,13 @@
     </a>
   </li>
 
+  <li class="nav-item">
+    <a class="nav-link" href="{{ route('formb.index') }}">
+      <i class="fas fa-file-alt"></i>
+      <span>Borang B</span>
+    </a>
+  </li>
+
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">
 
